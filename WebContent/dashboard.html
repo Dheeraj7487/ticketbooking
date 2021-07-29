@@ -1,0 +1,91 @@
+<html>
+
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+<style>
+	body {
+		background-image: url('MovieTicketBooking.jpg');
+		;
+		background-color: #cccccc;
+	}
+</style>
+
+<body>
+	<div class="main">
+		<h1>Book My Ticket Now</h1>
+		<form id="Dashboard" method="post" action="view.jsp">
+			<label>Name :</label>
+			<br>
+			<input type="text" name="name" id="name" placeholder="Enter Your Name">
+			<br>
+			<label>Mobile No :</label>
+			<br>
+			<input type="tel" name="phone" id="phone" placeholder="Enter Your Mobile No"
+				pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required maxlength="10">
+			<br>
+			<label>Select City :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="city" id="city">
+				<option value="choose" selected>choose</option>
+				<option value="Ashmedabad">Ahmedabad</option>
+				<option value="Rajkot">Rajkot</option>
+				<option value="Kalol">Kalol</option>
+				<option value="Palanpur">Palanpur</option>
+				<option value="Baroda">Baroda</option>
+			</select>
+			<br><br>
+
+			<label>Select Theatre :</label>&nbsp;&nbsp;&nbsp;
+			<select name="theatre" id="theatre">
+				<option value="theatre" selected>choose</option>
+				<option value="SunsetDrive-In">Sunset Drive-In</option>
+				<option value="Cinepolis Multiplex">Cinepolis Multiplex</option>
+				<option value="PVR Cinemas">PVR Cinemas</option>
+				<option value="IMAX 3D Theatre">IMAX 3D Theatre</option>
+			</select>
+			<br><br>
+
+
+
+			<label>Select Movie :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="movie" id="movie">
+				<option value="movie" selected>choose</option>
+				<option value="Marvel">Marvel</option>
+				<option value="T-Series">T-Series</option>
+				<option value="Cartoon">Cartoon</option>
+			</select>
+			<br><br>
+			<div>
+				<label>Select Seat :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<table>
+					<tr>
+						<td><select name="seat1" id="seat">
+								<option value="seat1" selected>choose</option>
+								<option value="Normal">Normal</option>
+								<option value="Premium">Premium</option>
+							</select></td>
+						<td><input type="number" name="seat1_book" id="member"min="0" max="10"></td>
+					</tr>
+					<tr>
+						<td><select name="seat2" id="seat">
+								<option value="seat2" selected>choose</option>
+								<option value="Normal">Normal</option>
+								<option value="Premium">Premium</option>
+							</select></td>
+						<td><input type="number" name="seat2_book" id="member" min="0" max="10"></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<label>Select Date :</label>
+			<br>
+			<input type="date" name="date" id="date" placeholder="Enter Date">
+			<br>
+			<input type="submit" value="Book Now" name="Book Now" id="book">
+
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(MovieTicketBooking.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Georgia (serif);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.main{
+	width: 500px;
+	height: 490px;
+	background: #000;
+	color: #fff;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.usericon{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.main input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.main input[type="int"], input[type="text"],input[type="month"],input[type="year"]
+{   
+	font-style: bold;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.main input[type="submit"] 
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.main input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.main input[type="submit"] 
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.maim h3
+{
+	width: 30px;
+}

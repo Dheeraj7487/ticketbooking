@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Payment</title>
+		//<link rel="stylesheet" type="text/css" href="Payment.css">
+</head>
+<style>
+body  {
+  background-image: url('MovieTicketBooking.jpg');;
+  background-color: #cccccc;
+}
+</style>
+<body>
+	<div class="main">
+			<form action="payment.jsp" method="post">
+				<h1>Payment</h1>	
+				<p>DEBIT/CREDIT/ATM CARD</p>
+				<form id="Payment" method="post" action="payment.jsp">
+				<label>CARD NO :</label>
+				<br>
+				<input type="int" name="cardnumber" id="name" placeholder="xxxx- xxx-xxx-xxx">
+				<br>
+				<label>NAME ON CARD:</label>
+				<br>
+				<input type="text" name="cardname" id="card" placeholder="NAME ON CARD" style="text-transform: uppercase">
+				<br>
+				<label>EXPIRY DATE:</label>
+				<input type="month" type="expirydate" name="date" placeholder="MM/YY">
+				<label>CVV</label>
+				<input type="int" name="cvv" placeholder="CVV" pattern="[0-9]">
+				<input type="submit" value="Pay" name="Payment" id="Payment">
+
+			</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="rstyle.css">
+</head>
+<style>
+body  {
+  background-image: url('MovieTicketBooking.jpg');;
+  background-color: #cccccc;
+}
+</style>
+<body>
+	<div class="main">
+		<img src="usericon.png" class="usericon" >
+			
+				<h1>Register Here</h1>
+				<form id="Register" action="RegisterServlet" method="post">
+				<label>Name :</label>
+				<br>
+				<input type="text" name="uname" id="name" placeholder="Enter Your Name">
+				<br>
+				<label>Mobile No :</label>
+				<br>
+				<input type="tel" name="phone" id="phone" placeholder="Enter Your Mobile No" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required maxlength="10">
+				<br>
+				<label>Email :</label>
+				<input type="email" name="email" id="email" pattern=".+@gmail.com" placeholder="Enter Your Vaild Email">
+				<br>
+				<label>Password :</label>
+    			<input type="password" placeholder="Enter Password" name="password" id="password" required maxlength="15">
+				<br>
+				<label>Confirm Password :</label>
+   				 <input type="password" placeholder="Enter Confirm Password" name="cnfpassword" id="confirm-password" required maxlength="15">
+   				 <br>
+				<input type="submit" value="Submit" name="submit" id="submit">
+
+			</form>
+	</div>
+</body>
+</html>
